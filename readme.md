@@ -4,7 +4,8 @@ It's a open source ecommerce platform management system using laravel.
 
 ## Packages Used
 
--
+- Lravel Debugbar
+- Media Libary
 
 ## Installation Instructions
 
