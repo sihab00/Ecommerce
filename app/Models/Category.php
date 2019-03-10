@@ -25,14 +25,22 @@ class Category extends Model
   
    public function parents_category()
    {
+
    	return $this->belongsTo(__CLASS__);
+
    }
+
     public function child_category()
    {
+
    	return $this->hasMany(__CLASS__);
+
    }
+
    public function product()
    {
+
    	return $this->hasMany(Product::class);
+    
    }
 }
