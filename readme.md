@@ -8,10 +8,10 @@ It's a open source ecommerce platform management system using laravel.
 
 ## Installation Instructions
 
--Clone the repo.
--Run 'composer install'
--Run 'php .env.example'
--Run 'php artisan migrate --seed'
+- Clone the repo.
+- Run 'composer install'
+- Run 'cp .env.example .env'
+- Run 'php artisan migrate --seed'
 
 
 ## Contribution Guideline
