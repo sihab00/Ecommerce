@@ -12,5 +12,5 @@
 */
 
 Route::get('/', function () {
-    return view('frontend.layout.master');
+    return view('frontend.home');
 });
