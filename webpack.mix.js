@@ -11,10 +11,10 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js([
+mix.sass('resources/sass/app.scss', 'public/css/app.css')
+   .styles(['resources/css/custom.css'],'public/css/custom.css')
+   .js([
 	'resources/js/app.js',
 	'resources/js/custom.js',
 	], 'public/js/all.js')
-   .sass('resources/sass/app.scss', 'public/css')
-   .styles(['resources/css/custom.css'],'public/css')
    .version();
