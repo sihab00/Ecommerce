@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.layout.master');
+Route::group(['namespace'=>'Frontend'], function(){
+
+	Route::get('/', 'HomeController@showHomePage');
+
 });
+
