@@ -17,10 +17,11 @@
 
           <div class="row">
           @foreach($products as $product)
+          
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
 
-                <img class="card-img-top" src="{{$product->getFirstMediaUrl('products') }}" alt="{{$product->getFirstMediaUrl('products')}}">
+                <img class="card-img-top" src="{{$product->getFirstMediaUrl('products') }}" alt="{{$product->title}}">
 
                 <div class="card-body">
                   <p class="card-text">

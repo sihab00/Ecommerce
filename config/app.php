@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://E-commerce.sihab'),
+    'url' => env('APP_URL', 'http://ecommerce-sihab'),
 
     'asset_url' => env('ASSET_URL', null),
 
