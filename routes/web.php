@@ -19,7 +19,8 @@ Route::group(['namespace'=>'Frontend'], function(){
 
 Route::group(['namespace'=>'Backend'], function(){
 
-	Route::get('/dashboard', 'DashboardController@showDashboard');
+	Route::get('/dashboard', 'DashboardController@showDashboard')->name('dashboard');
+	Route::resource('/categories', 'CategoryController');
 
 });
 

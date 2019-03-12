@@ -21,7 +21,7 @@
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
 
-                <img class="card-img-top" src="{{$product->getFirstMediaUrl('products') }}" alt="{{$product->title}}">
+                <img class="card-img-top" src="http://127.0.0.1:8000{{$product->getFirstMediaUrl('products') }}" alt="{{$product->title}}">
 
                 <div class="card-body">
                   <p class="card-text">
