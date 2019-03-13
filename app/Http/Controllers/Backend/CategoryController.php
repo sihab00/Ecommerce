@@ -45,14 +45,20 @@ class CategoryController extends Controller
             'name'=>'required|max:128|unique:categories,name',
             'banner'=>'required|image|1024'
             ]);
-        if ($validate) {
-            
+
+        if ($request->hasfile('banner')) {
+           $image = $request->file('banner');
+           $fileName = time().'.'.$image->getClientOriginalExtension();
+           $location = storage_path('banner/'.$fileName);
+          
+           $category->image = $fileName;
         }
 
         $category = new Category();
 
-        $category->name = $request->name;
-        $category->slug = str_slug($request->name);
+        $category->name = trim($request->name);
+        $category->slug = trim(str_slug($request->name));
+        $category->banner = $fileName;
 
     }
 
